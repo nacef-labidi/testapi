@@ -21,7 +21,7 @@ from rest_framework import routers, serializers, viewsets
 class BarSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Bar
-        fields = ('name', 'address', 'tel', 'email')
+        fields = ('name', 'address', 'tel', 'email', 'rating')
 
 
 class BarViewSet(viewsets.ModelViewSet):
